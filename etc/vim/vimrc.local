@@ -1,0 +1,81 @@
+" ###################################################################################################
+" sudo apt-get install vim-gtk
+" sudo git clone https://github.com/VundleVim/Vundle.vim.git /etc/vim/bundle/Vundle.vim
+" sudo apt install build-essential cmake python3-dev
+" :PluginInstall
+" sudo git submodule update --init --recursive
+" sudo python /etc/vim/bundle/Vundle.vim/YouCompleteMe/install.py
+" sudo apt-get install ctags
+" sudo ctags -R
+" copy to taglist-*.zip to ${VIM}/vimfiles
+" ###################################################################################################
+
+" =============================================================
+" set runtime path to include Vundle and initailze
+" =============================================================
+set rtp+=/etc/vim/bundle/Vundle.vim
+call vundle#begin('/etc/vim/bundle/Vundle.vim')
+Plugin 'VundleVim/vundle.vim'
+
+" NERDTree plugin configuration
+Plugin 'scrooloose/nerdtree'
+let NERDTreeWinPos = "left"
+let NERDTreeWinSize = 30
+let NERDTreeMinimalUI = 1 
+let NERDTreeDirArrows = 1
+
+" Pretty status bar plugin
+Plugin 'vim-airline/vim-airline'
+
+" Git plugin
+Plugin 'tpope/vim-fugitive'
+
+" Displays git changed contents
+Plugin 'airblade/vim-gitgutter'
+
+" Checks syntax error
+Plugin 'scrooloose/syntastic'
+
+" Finds source
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" Color Scheme
+Plugin 'nanotech/jellybeans.vim'
+
+" Curreunt window opacity
+Plugin 'blueyed/vim-diminactive'
+let g:diminactive_enable_focus = 1
+
+" Marks all keyword for searching.
+Plugin 'haya14busa/incsearch.vim'
+
+" autocompletion
+Bundle 'Valloric/YouCompleteMe'
+
+" ctags plugin configuration
+Plugin 'taglist.vim'
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 30
+
+call vundle#end()
+
+" =============================================================
+" Vim initial configuration
+" =============================================================
+set lines=70 columns=250
+set nowrap
+set number
+set ts=4
+set encoding=UTF-8
+syntax on
+filetype on
+set t_Co=256
+colorscheme jellybeans
+set background=dark
+
+" ============================================================
+" Defines Short Cut
+" ============================================================
+nmap <F12> :NERDTreeToggle \| TlistToggle<CR>
+
+
