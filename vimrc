@@ -1,10 +1,8 @@
 " =============================================================
 " set runtime path to include Vundle and initailze
 " ============================================================= 
-set rtp+=Data\settings\python
-set rtp+=Data\settings\bundle\Vundle.vim
 call vundle#begin()
-Plugin 'VundleVim/vuldle.vim'
+Plugin 'git://github.com/VundleVim/Vundle.vim.git'
 
 " NERDTree plugin configuration
 Plugin 'scrooloose/nerdtree'
