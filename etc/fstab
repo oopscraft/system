@@ -12,7 +12,7 @@ UUID=30F4-98EB  /boot/efi       vfat    umask=0077      0       1
 # swap was on /dev/sda3 during installation
 UUID=038ee8e2-fd5a-4e78-8e1a-26319f163413 none            swap    sw              0       0
 
-# mount nas via nfs
+# mount nas via nfs (sudo apt install nfs-common rpcbind)
 192.168.0.3:/volume1/01.user /home/01.user nfs defaults 0 0
 192.168.0.3:/volume1/02.service /home/02.service nfs defaults 0 0
 
