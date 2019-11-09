@@ -2,7 +2,8 @@
 System Configuration Examples
 
 
-# nodejs installation
+# NODEJS installation
+## nodejs installation
 ```
 # searches nodejs package
 user@host> sudo apt-cache search nodejs
@@ -10,12 +11,12 @@ user@host> sudo apt-cache search nodejs
 user@host> sudo apt-get install nodejs-*
 ```
 
-# NPM installation
+## NPM installation
 ```
 user@host> sudo apt-get install npm
 ```
 
-# PM2(Process Manager for Nodejs) installation
+## PM2(Process Manager for Nodejs) installation
 ```
-user@host> npm install pm2 -g
+user@host> sudo npm install pm2 -g
 ```
