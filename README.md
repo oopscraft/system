@@ -10,7 +10,7 @@ user@host> sudo apt-cache search nodejs
 user@host> sudo apt-get install nodejs-*
 ```
 
-# PM2(Process Manager for Nodejs)
+# PM2(Process Manager for Nodejs) installation
 ```
 
 ```
