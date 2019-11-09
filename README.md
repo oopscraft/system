@@ -2,7 +2,7 @@
 System Configuration Examples
 
 
-# NODEJS installation
+# NODEJS Environment
 ## nodejs installation
 ```
 # searches nodejs package
