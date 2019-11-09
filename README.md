@@ -13,13 +13,16 @@ user@host> sudo apt-get install nodejs-*
 
 ## NPM installation
 ```
+# installs package
 user@host> sudo apt-get install npm
+# checks
+user@host> npm --help
 ```
 
 ## PM2(Process Manager for Nodejs) installation
 ```
 # installs pm2 package
 user@host> sudo npm install pm2 -g
-# checks version
-user@host> pm2 --version
+# checks
+user@host> pm2 --help
 ```
