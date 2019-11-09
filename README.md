@@ -9,7 +9,7 @@ System Configuration Examples
 user@host> sudo apt-cache search nodejs
 # installs package
 user@host> sudo apt-get install nodejs-*
-# checks help
+# checks installation
 user@host> node --help
 ```
 
@@ -17,7 +17,7 @@ user@host> node --help
 ```
 # installs package
 user@host> sudo apt-get install npm
-# checks
+# checks installation
 user@host> npm --help
 ```
 
@@ -25,6 +25,6 @@ user@host> npm --help
 ```
 # installs pm2 package
 user@host> sudo npm install pm2 -g
-# checks
+# checks installation
 user@host> pm2 --help
 ```
