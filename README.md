@@ -1,5 +1,4 @@
-# system
-System Configuration Examples
+# System Installation Guide
 
 # SSH Server Installation
 ## installs openssh-server
