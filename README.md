@@ -1,18 +1,20 @@
 # System Installation Guide
 
-# SSH Server Installation
-## installs openssh-server
+## SSH Server Installation
 ```
+# installs openssh-server
 user@host> sudo apt-get install openssh-server
+
+# checks service
+user@host> sudo service sshd status
 ```
 
 # NFS(Network File System) Configuration
-## NFS package installation
 ```
+# installs packages
 user@host> sudo apt-get install rpcbind nfs-common
-```
-## fstab configuration
-```
+
+# sets fstab configuration file
 user@host> sudo vim /etc/fstab
 ...
 192.168.0.3:/volume1/01.user /home/01.user nfs defaults 0 0
