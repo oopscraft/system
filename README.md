@@ -2,11 +2,11 @@
 System Configuration Examples
 
 # NFS(Network File System) Environment
-## rpcbind,nfs-common package installation
+## installs package
 ```
 user@host> sudo apt-get install rpcbind nfs-common
 ```
-## setting configuration
+## sets configuration
 ```
 user@host> sudo vim /etc/fstab
 ...
