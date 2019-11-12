@@ -1,7 +1,13 @@
 # system
 System Configuration Examples
 
-# NFS(Network File System) Environment
+# SSH Server Installation
+## installs openssh-server
+```
+user@host> sudo apt-get install openssh-server
+```
+
+# NFS(Network File System) Configuration
 ## installs package
 ```
 user@host> sudo apt-get install rpcbind nfs-common
