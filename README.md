@@ -8,16 +8,25 @@ user@host> sudo apt-get install openssh-server
 ```
 
 # NFS(Network File System) Configuration
-## installs package
+## NFS package installation
 ```
 user@host> sudo apt-get install rpcbind nfs-common
 ```
-## sets configuration
+## fstab configuration
 ```
 user@host> sudo vim /etc/fstab
 ...
 192.168.0.3:/volume1/01.user /home/01.user nfs defaults 0 0
 ...
+```
+# JAVA Environment
+```
+# search openjdk packages
+user@host> sudo apt-cache search openjdk
+# install openjdk
+user@host> sudo apt-get install openjdk-8-*
+# checks installation
+user@host> java -version
 ```
 
 # NODEJS Environment
