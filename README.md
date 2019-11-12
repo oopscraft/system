@@ -28,7 +28,7 @@ user@host> sudo service shellinabox restart
 ```
 
 ## NFS(Network File System) Configuration
-<a href="etc/fstab" target="_blank">./etc/fstab</a>
+see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
 ```shell
 # installs packages
 user@host> sudo apt-get install rpcbind nfs-common
