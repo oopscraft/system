@@ -9,7 +9,7 @@ user@host> sudo apt-get install openssh-server
 user@host> sudo service sshd status
 ```
 
-# NFS(Network File System) Configuration
+## NFS(Network File System) Configuration
 ```shell
 # installs packages
 user@host> sudo apt-get install rpcbind nfs-common
@@ -20,8 +20,7 @@ user@host> sudo vim /etc/fstab
 192.168.0.3:/volume1/01.user /home/01.user nfs defaults 0 0
 ...
 ```
-# JAVA Environment
-## OPENJDK installation
+## JAVA Environment
 ```shell
 # search openjdk packages
 user@host> sudo apt-cache search openjdk
@@ -33,33 +32,29 @@ user@host> sudo apt-get install openjdk-8-*
 user@host> java -version
 ```
 
-# NODEJS Environment
-## nodejs installation
+## NODEJS Environment
 ```shell
 # searches nodejs package
 user@host> sudo apt-cache search nodejs
 
-# installs package
+# installs nodejs package
 user@host> sudo apt-get install nodejs-*
 
-# checks installation
+# checks nodejs
 user@host> node --help
-```
 
-## NPM installation
-```shell
-# installs package
+# installs NPM package manager
 user@host> sudo apt-get install npm
 
-# checks installation
+# checks NPM package manager
 user@host> npm --help
-```
 
-## PM2(Process Manager for Nodejs) installation
-```shell
-# installs pm2 package
+# installs PM2(Process Manager for Nodejs) installation
 user@host> sudo npm install pm2 -g
 
-# checks installation
+# checks PM2 installation
 user@host> pm2 --help
 ```
+
+
+
