@@ -9,6 +9,24 @@ user@host> sudo apt-get install openssh-server
 user@host> sudo service sshd status
 ```
 
+## Shell In A Box(Web based SSH) Installation
+```shell
+# searches package
+user@host> sudo apt-cache search shellinabox
+
+# installs package
+user@host> sudo apt-get install shellinabox
+
+# sets configuration(port)
+user@host> sudo vim /etc/default/shellinabox
+...
+SHELLINABOX_PORT=4200
+...
+
+# restarts process
+user@host> sudo service shellinabox restart
+```
+
 ## NFS(Network File System) Configuration
 ```shell
 # installs packages
@@ -20,6 +38,7 @@ user@host> sudo vim /etc/fstab
 192.168.0.3:/volume1/01.user /home/01.user nfs defaults 0 0
 ...
 ```
+
 ## JAVA Environment
 ```shell
 # search openjdk packages
