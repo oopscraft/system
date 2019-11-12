@@ -20,6 +20,7 @@ user@host> sudo vim /etc/fstab
 ...
 ```
 # JAVA Environment
+## OPENJDK installation
 ```
 # search openjdk packages
 user@host> sudo apt-cache search openjdk
