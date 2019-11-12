@@ -28,7 +28,6 @@ user@host> sudo service shellinabox restart
 ```
 
 ## NFS(Network File System) Configuration
-see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
 ```shell
 # installs packages
 user@host> sudo apt-get install rpcbind nfs-common
@@ -39,6 +38,7 @@ user@host> sudo vim /etc/fstab
 192.168.0.3:/volume1/01.user /home/01.user nfs defaults 0 0
 ...
 ```
+see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
 
 ## JAVA Environment
 ```shell
