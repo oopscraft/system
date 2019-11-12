@@ -1,6 +1,18 @@
 # system
 System Configuration Examples
 
+# NFS(Network File System) Environment
+## rpcbind,nfs-common package installation
+```
+user@host> sudo apt-get install rpcbind nfs-common
+```
+## setting configuration
+```
+user@host> sudo vim /etc/fstab
+...
+192.168.0.3:/volume1/01.user /home/01.user nfs defaults 0 0
+...
+```
 
 # NODEJS Environment
 ## nodejs installation
