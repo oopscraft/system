@@ -9,6 +9,17 @@ user@host> sudo apt-get install openssh-server
 user@host> sudo service sshd status
 ```
 
+# VIM Environment
+```shell
+# install vim
+user@host> sudo apt-get install vim
+
+# edits configuration
+user@host> sudo vim /etc/vimrc
+```
+see <a href="etc/vim/vimrc.local" target="_blank">/etc/vim/vimrc.local</a> for details.
+
+
 ## Shell In A Box(Web based SSH) Installation
 ```shell
 # searches package
@@ -76,9 +87,5 @@ user@host> sudo npm install pm2 -g
 user@host> pm2 --help
 ```
 
-# VIM Environment
-```shell
-user@host> sudo vim /etc/vimrc
-```
-see <a href="etc/vimrc" target="_blank">/etc/vimrc</a> for details.
+
 
