@@ -109,8 +109,10 @@ user@host> apt-cache policy docker-ce
 user@host> sudo apt install docker-ce
 
 # list docker version and process
+user@host> sudo service docker start
 user@host> sudo docker version
 user@host> sudo docker ps
+user@host> sudo docker login
 ```
 
 
@@ -127,7 +129,6 @@ oracle ALL=(ALL:ALL) ALL
 ...
 
 # download docker image installed oracle
-user@host> sudo docker login
 user@host> sudo docker pull store/oracle/database-enterprise:12.2.0.1
 
 
