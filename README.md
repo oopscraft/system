@@ -41,7 +41,7 @@ user@host> sudo vim /etc/fstab
 see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
 
 
-# VIM Environment
+## VIM Environment
 ```shell
 # edits configuration
 user@host> sudo vim /etc/vimrc
