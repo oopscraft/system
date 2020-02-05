@@ -43,11 +43,14 @@ see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
 
 # VIM Environment
 ```shell
-# installs library
+# install plugins
 user@host> sudo apt-get install vim
 user@host> sudo git clone https://github.com/VundleVim/Vundle.vim.git /etc/vim/bundle/Vundle.vim
 user@host> sudo apt install build-essential cmake python3-dev
+user@host> vim
+...
 :PluginInstall
+...
 sudo git submodule update --init --recursive
 sudo python /etc/vim/bundle/Vundle.vim/YouCompleteMe/install.py
 sudo apt-get install ctags
