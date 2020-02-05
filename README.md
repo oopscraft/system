@@ -76,5 +76,9 @@ user@host> sudo npm install pm2 -g
 user@host> pm2 --help
 ```
 
-
+# VIM Environment
+```shell
+user@host> sudo vim /etc/vimrc
+```
+see <a href="etc/vimrc" target="_blank">/etc/vimrc</a> for details.
 
