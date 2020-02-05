@@ -12,7 +12,7 @@ user@host> sudo service sshd status
 # VIM Environment
 ```shell
 # install vim
-user@host> sudo apt-get install vim
+user@host> sudo apt-get install vim ctags
 
 # edits configuration
 user@host> sudo vim /etc/vimrc
