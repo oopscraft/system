@@ -96,5 +96,37 @@ user@host> sudo npm install pm2 -g
 user@host> pm2 --help
 ```
 
+## DOCKER Installation
+```shell
+# removes older version docker and install new version
+user@host> sudo apt-get remove remove docker docker-engine docker.io containerd runc
+user@host> sudo apt update
+user@host> sudo apt install apt-transport-https ca-certificates curl software-properties-common
+user@host> curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+user@host> sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+user@host> sudo apt update
+user@host> apt-cache policy docker-ce
+user@host> sudo apt install docker-ce
+```
 
+
+## Oracle Database Installation(with docker)
+```shell
+# creates oracle user
+user@host> sudo useradd oracle -d /home/02.service/oracle -s /bin/bash
+user@host> sudo passwd oracle
+
+# add sudoers
+user@host> sudo vim /etc/sudoers
+...
+oracle ALL=(ALL:ALL) ALL
+...
+
+# download docker image installed oracle
+// TODO
+
+
+
+
+```
 
