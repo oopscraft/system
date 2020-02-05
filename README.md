@@ -46,19 +46,16 @@ see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
 # edits configuration
 user@host> sudo vim /etc/vimrc
 
-# install plugins
-user@host> sudo apt-get install vim
+# install library
+user@host> sudo apt-get install vim build-essential cmake python3-dev ctags
+
+# checkout vim bundle and install
 user@host> sudo git clone https://github.com/VundleVim/Vundle.vim.git /etc/vim/bundle/Vundle.vim
-user@host> sudo apt install build-essential cmake python3-dev
+user@host> sudo ctags -R
 user@host> sudo vim
 ...
 :PluginInstall
 ...
-sudo git submodule update --init --recursive
-sudo python /etc/vim/bundle/Vundle.vim/YouCompleteMe/install.py
-sudo apt-get install ctags
-sudo ctags -R
-copy to taglist-*.zip to ${VIM}/vimfiles
 ```
 see <a href="etc/vim/vimrc.local" target="_blank">/etc/vim/vimrc.local</a> for details.
 
