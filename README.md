@@ -127,7 +127,8 @@ oracle ALL=(ALL:ALL) ALL
 ...
 
 # download docker image installed oracle
-// TODO
+user@host> sudo docker login
+user@host> sudo docker pull store/oracle/database-enterprise:12.2.0.1
 
 
 
