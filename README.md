@@ -47,7 +47,7 @@ see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
 user@host> sudo apt-get install vim
 user@host> sudo git clone https://github.com/VundleVim/Vundle.vim.git /etc/vim/bundle/Vundle.vim
 user@host> sudo apt install build-essential cmake python3-dev
-user@host> vim
+user@host> sudo vim
 ...
 :PluginInstall
 ...
