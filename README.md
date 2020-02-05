@@ -9,17 +9,6 @@ user@host> sudo apt-get install openssh-server
 user@host> sudo service sshd status
 ```
 
-# VIM Environment
-```shell
-# install vim
-user@host> sudo apt-get install vim ctags
-
-# edits configuration
-user@host> sudo vim /etc/vimrc
-```
-see <a href="etc/vim/vimrc.local" target="_blank">/etc/vim/vimrc.local</a> for details.
-
-
 ## Shell In A Box(Web based SSH) Installation
 ```shell
 # searches package
@@ -50,6 +39,26 @@ user@host> sudo vim /etc/fstab
 ...
 ```
 see <a href="etc/fstab" target="_blank">/etc/fstab</a> for details.
+
+
+# VIM Environment
+```shell
+# installs library
+user@host> sudo apt-get install vim
+user@host> sudo git clone https://github.com/VundleVim/Vundle.vim.git /etc/vim/bundle/Vundle.vim
+user@host> sudo apt install build-essential cmake python3-dev
+:PluginInstall
+sudo git submodule update --init --recursive
+sudo python /etc/vim/bundle/Vundle.vim/YouCompleteMe/install.py
+sudo apt-get install ctags
+sudo ctags -R
+copy to taglist-*.zip to ${VIM}/vimfiles
+```
+# edits configuration
+user@host> sudo vim /etc/vimrc
+```
+see <a href="etc/vim/vimrc.local" target="_blank">/etc/vim/vimrc.local</a> for details.
+
 
 ## JAVA Environment
 ```shell
