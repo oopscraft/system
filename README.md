@@ -53,7 +53,7 @@ sudo python /etc/vim/bundle/Vundle.vim/YouCompleteMe/install.py
 sudo apt-get install ctags
 sudo ctags -R
 copy to taglist-*.zip to ${VIM}/vimfiles
-```
+
 # edits configuration
 user@host> sudo vim /etc/vimrc
 ```
