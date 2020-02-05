@@ -131,8 +131,8 @@ oracle ALL=(ALL:ALL) ALL
 # download docker image installed oracle
 user@host> sudo docker pull store/oracle/database-enterprise:12.2.0.1
 
-
-
-
+# start oracle database
+user@host> sudo docker run -d --name oracle -p 59160:22 -p 1521:1521 -v ~/ORCL:/ORCL store/oracle/database-enterprise:12.2.0.1
 ```
+see <a href="home/oracle" target="_blank">/home/oracle/oracle.sh</a> for details.
 
