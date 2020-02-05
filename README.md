@@ -107,6 +107,10 @@ user@host> sudo add-apt-repository "deb [arch=amd64] https://download.docker.com
 user@host> sudo apt update
 user@host> apt-cache policy docker-ce
 user@host> sudo apt install docker-ce
+
+# list docker version and process
+user@host> sudo docker version
+user@host> sudo docker ps
 ```
 
 
