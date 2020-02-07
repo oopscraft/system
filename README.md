@@ -129,10 +129,18 @@ oracle ALL=(ALL:ALL) ALL
 ...
 
 # download docker image installed oracle
-user@host> sudo docker pull store/oracle/database-enterprise:12.2.0.1
+sudo docker pull store/oracle/database-enterprise:12.2.0.1-slim
+user@host> sudo docker image ls
 
-# start oracle database
-user@host> sudo docker run -d --name oracle -p 59160:22 -p 1521:1521 -v ~/ORCL:/ORCL store/oracle/database-enterprise:12.2.0.1
+# creates container
+sudo docker run -d -it --name oracle -p 59160:22 -p 1521:1521 store/oracle/database-enterprise:12.2.0.1-slim
+watch sudo docker ps -al
+
+# connect sqlplus and create user
+sudo docker exec -it oracle bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
+sqlplus> connect sys as sysdba;
+sqlplus> create user c##application identified by abcd1234;
+sqlplus> grant connect,resource to c##application;
 ```
 see <a href="home/oracle" target="_blank">/home/oracle/oracle.sh</a> for details.
 
